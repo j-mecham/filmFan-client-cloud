@@ -27312,52 +27312,38 @@ var _movieView = require("../movie-view/movie-view");
 var _s = $RefreshSig$();
 const MainView = ()=>{
     _s();
-    const [movies, setMovies] = (0, _react.useState)([
-        {
-            id: 1,
-            title: "Scott Pilgrim vs. the World",
-            image: "https://m.media-amazon.com/images/I/517XbXyIwRL._AC_UF894,1000_QL80_.jpg",
-            director: "Edgar Wright",
-            genre: "Action",
-            description: "In a magically realistic version of Toronto, a young man must defeat his new girlfriend's seven evil exes one by one in order to win her heart.",
-            year: "2010",
-            cast: "Michael Cera, Mary Elizabeth Winstead"
-        },
-        {
-            id: 1,
-            title: "The Grand Budapest Hotel",
-            image: "https://m.media-amazon.com/images/I/713kiC-8JhL._AC_UF894,1000_QL80_.jpg",
-            director: "Wes Anderson",
-            genre: "Comedy",
-            description: "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy in the hotel's glorious years under an exceptional concierge.",
-            year: "2014",
-            cast: "Ralph Fiennes, Tony Revolori"
-        },
-        {
-            id: 1,
-            title: "Everything Everywhere All at Once",
-            image: "https://m.media-amazon.com/images/I/A1f7vq1AwuL._AC_UF894,1000_QL80_.jpg",
-            director: "Daniels",
-            genre: "Action",
-            description: "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.",
-            year: "2022",
-            cast: "Michelle Yeoh, Ke Huy Quan"
-        }
-    ]);
+    const [movies, setMovies] = (0, _react.useState)([]);
     const [selectedMovie, setSelectedMovie] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        fetch("https://filmfanattic-8d1d52c1e608.herokuapp.com/movies").then((response)=>response.json()).then((data)=>{
+            const moviesFromApi = data.docs.map((doc)=>{
+                return {
+                    id: doc.id,
+                    title: doc.title,
+                    image: doc.image,
+                    director: doc.director,
+                    genre: doc.genre,
+                    description: doc.description,
+                    year: doc.release_year,
+                    cast: doc.actors
+                };
+            });
+            setMovies(moviesFromApi);
+        });
+    }, []);
     if (selectedMovie) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieView.MovieView), {
         movie: selectedMovie,
         onBackClick: ()=>setSelectedMovie(null)
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 46,
+        lineNumber: 32,
         columnNumber: 13
     }, undefined);
     if (movies.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "The list is empty!"
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 51,
+        lineNumber: 37,
         columnNumber: 16
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27368,16 +27354,16 @@ const MainView = ()=>{
                 }
             }, movie.id, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 57,
+                lineNumber: 43,
                 columnNumber: 17
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 55,
+        lineNumber: 41,
         columnNumber: 9
     }, undefined);
 };
-_s(MainView, "ZPzcOO3arVF1Tl4Ab3UK1C8oVIw=");
+_s(MainView, "PO+XgOji7E32nFJj3H5UPLPJ7w4=");
 _c = MainView;
 var _c;
 $RefreshReg$(_c, "MainView");
