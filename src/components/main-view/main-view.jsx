@@ -10,17 +10,18 @@ export const MainView = () => {
     useEffect(() => {
         fetch("https://filmfanattic-8d1d52c1e608.herokuapp.com/movies")
             .then((response) => response.json())
-            .then((data) => {
-                const moviesFromApi = data.docs.map((doc) => {
+            .then((movies) => {
+                console.log(movies);
+                const moviesFromApi = movies.map((movie) => {
                     return {
-                        id: doc.id,
-                        title: doc.title,
-                        image: doc.image,
-                        director: doc.director,
-                        genre: doc.genre,
-                        description: doc.description,
-                        year: doc.release_year,
-                        cast: doc.actors
+                        id: movie._id,
+                        title: movie.Title,
+                        image: movie.ImagePath,
+                        director: movie.Director.Name,
+                        genre: movie.Genre.Name,
+                        description: movie.Description,
+                        year: movie.Release_Year,
+                        actors: movie.Actors
                     };
                 });
                 setMovies(moviesFromApi);
