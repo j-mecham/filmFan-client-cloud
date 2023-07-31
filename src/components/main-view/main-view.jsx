@@ -14,11 +14,12 @@ export const MainView = () => {
 
     useEffect(() => {
         if (!token) {
+            console.log("no token")
             return;
         }
 
         fetch("https://filmfanattic-8d1d52c1e608.herokuapp.com/movies", {
-            headers: { Authorization: 'Bearer ${token}' }
+            headers: { Authorization: `Bearer ${token}` }
         })
             .then((response) => response.json())
             .then((movies) => {
@@ -40,6 +41,7 @@ export const MainView = () => {
     }, [token]);
 
     if (!user) {
+        console.log("no User!")
         return (
             <>
                 <LoginView onLoggedIn={(user, token) => {
@@ -59,7 +61,9 @@ export const MainView = () => {
     }
 
     if (movies.length === 0) {
-        return <div>The list is empty!</div>;
+        return <div>The list is empty!
+            <button onClick={() => { setUser(null); setToken(null); localStorage.clear(); }}>Logout</button>
+        </div>;
     }
 
     return (
