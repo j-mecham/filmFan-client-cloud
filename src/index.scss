@@ -1,4 +1,19 @@
-$primary: FireBrick;
-$body-bg: LightGray;
+$primary: #8b0000;
+$body-bg: #222222;
 
 @import '~bootstrap/scss/bootstrap.scss';
+
+* {
+    color: white;
+}
+
+input {
+    color-scheme: dark;
+}
+
+button {
+    background-color: $primary;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
