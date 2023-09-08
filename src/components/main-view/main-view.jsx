@@ -16,6 +16,7 @@ export const MainView = () => {
     const [token, setToken] = useState(storedToken ? storedToken : null);
     const [movies, setMovies] = useState([]);
     const [viewMovies, setViewMovies] = useState(movies);
+    const { searchedMovies, setSearchedMovies } = useState([]);
 
     useEffect(() => {
         if (!token) {
@@ -46,8 +47,16 @@ export const MainView = () => {
     }, [token]);
 
     useEffect(() => {
-        setViewMovies(movies);
+        setSearchedMovies(movies);
     }, [movies]);
+
+    const onSearch = (query) => {
+        const searchedFor = query.target.value.toLowerCase();
+        const newArray = movies.filter((movie) =>
+            movie.title.toLowerCase().includes(searchedFor)
+        );
+        setSearchedMovies(newArray)
+    }
 
     return (
         <BrowserRouter>
@@ -58,14 +67,7 @@ export const MainView = () => {
                     setToken(null);
                     localStorage.clear("user", "token");
                 }}
-                onSearch={(query) => {
-                    setViewMovies(
-                        movies.filter((movie) =>
-                            movie.title.toLowerCase().includes(query.toLowerCase())
-                        )
-                    );
-                }}
-
+                onSearch={onSearch}
             />
             <Row className="justify-content-md-center">
                 <Routes>
@@ -121,7 +123,6 @@ export const MainView = () => {
                                             token={token}
                                             setUser={setUser}
                                             movies={movies}
-                                        //updatedUser={updatedUser}
                                         />
                                     </Col>
                                 ) : (

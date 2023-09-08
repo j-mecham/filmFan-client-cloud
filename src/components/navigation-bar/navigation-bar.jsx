@@ -6,11 +6,6 @@ import Form from 'react-bootstrap/Form';
 import { useEffect, useState } from 'react';
 
 export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
-    const [query, setQuery] = useState('');
-
-    useEffect(() => {
-        onSearch(query);
-    }, [query])
 
     return (
         <Navbar
@@ -85,21 +80,18 @@ export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
                             </>
                         )}
                     </Nav>
-                    {/* {user && (
+                    {user && (
                         <Form className="d-flex">
                             <Form.Control
                                 style={{ color: 'white' }}
-                                type="search"
+                                type="text"
                                 placeholder="Search"
                                 className="md-2"
                                 aria-label="Search"
-                                value={query}
-                                onChange={(e) => {
-                                    setQuery(e.target.value);
-                                }}
+                                onChange={onSearch}
                             />
                         </Form>
-                    )} */}
+                    )}
                 </Navbar.Collapse>
             </Container>
         </Navbar>

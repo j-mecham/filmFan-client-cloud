@@ -2274,11 +2274,6 @@ progress {
   display: block;
 }
 
-.form-control::placeholder {
-  color: var(--bs-secondary-color);
-  opacity: 1;
-}
-
 .form-control:disabled {
   background-color: var(--bs-secondary-bg);
   opacity: 1;
@@ -13186,6 +13181,19 @@ button {
   background-color: #8b0000;
   margin: 20px 5px 5px;
   padding: 20px;
+}
+
+.form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-control::-moz-placeholder {
+  color: #fff;
 }
 
 .back-button {
