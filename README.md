@@ -7,8 +7,8 @@ Use React to build the client-side for an app based on its [existing server-side
 FilmFan is a single-page application that allows users to create a profile to view a list of movies, add movies to thier favorites list, see info about individual movies and update or delete their profile.
 
 ## Links
-- [Live Site]
-- [API]
+- [Live Site](https://filmfan.netlify.app/)
+- [API](https://github.com/j-mecham/movie_api)
 
 ## Technical Requirements:
 - The application is a single-page application (SPA)
