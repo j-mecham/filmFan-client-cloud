@@ -34,3 +34,8 @@ button {
     /* Microsoft Edge */
     color: white;
 }
+
+.active-nav {
+    background-color: $body-bg;
+    border-radius: 8px;
+}

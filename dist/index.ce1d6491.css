@@ -13196,6 +13196,11 @@ button {
   color: #fff;
 }
 
+.active-nav {
+  background-color: #222;
+  border-radius: 8px;
+}
+
 .back-button {
   color: #f5f5f5;
   border: none;

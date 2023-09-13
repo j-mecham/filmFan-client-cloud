@@ -61,7 +61,7 @@ export const SignupView = ({ onLoggedIn }) => {
     return (
         <Form onSubmit={handleSubmit}>
             <Form.Group>
-                <Form.Label>Username:</Form.Label>.
+                <Form.Label>Username:</Form.Label>
                 <Form.Control
                     type="text"
                     style={{ color: "white" }}

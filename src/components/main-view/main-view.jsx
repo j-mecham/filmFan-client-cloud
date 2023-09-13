@@ -15,8 +15,7 @@ export const MainView = () => {
     const [user, setUser] = useState(storedUser ? storedUser : null);
     const [token, setToken] = useState(storedToken ? storedToken : null);
     const [movies, setMovies] = useState([]);
-    const [viewMovies, setViewMovies] = useState(movies);
-    const { searchedMovies, setSearchedMovies } = useState([]);
+    const [searchedMovies, setSearchedMovies] = useState([]);
 
     useEffect(() => {
         if (!token) {
@@ -162,7 +161,7 @@ export const MainView = () => {
                                     <Col>The list is empty!</Col>
                                 ) : (
                                     <>
-                                        {movies.map((movie) => (
+                                        {searchedMovies.map((movie) => (
                                             <Col className="mb-4" key={movie.id} md={3}>
                                                 <MovieCard movie={movie} />
                                             </Col>
