@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./movie-view.scss";
-// import { Image } from "react-bootstrap/Image";
 
 export const MovieView = ({ movies, user, setUser, token }) => {
     const { movieId } = useParams();

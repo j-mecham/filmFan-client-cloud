@@ -1,17 +1,9 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useSelector, useDispatch } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
-    const [query, setQuery] = useState('');
-
-    useEffect(() => {
-        onSearch(query);
-    }, [query])
-
+    const location = useLocation()
     return (
         <Navbar
             sticky="top"
@@ -43,6 +35,7 @@ export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
                                     style={{
                                         color: 'white'
                                     }}
+                                    className={location.pathname === "/login" ? 'active-nav' : ''}
                                 >
                                     Login
                                 </Nav.Link>
@@ -51,6 +44,8 @@ export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
                                     style={{
                                         color: 'white'
                                     }}
+                                    className={location.pathname === "/signup" ? 'active-nav' : ''}
+
                                 >
                                     Signup
                                 </Nav.Link>
@@ -61,8 +56,9 @@ export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
                                 <Nav.Link
                                     as={Link} to="/"
                                     style={{
-                                        color: 'white'
+                                        color: 'white',
                                     }}
+                                    className={location.pathname === "/" ? 'active-nav' : ''}
                                 >
                                     Home
                                 </Nav.Link>
@@ -71,6 +67,7 @@ export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
                                     style={{
                                         color: 'white'
                                     }}
+                                    className={location.pathname === "/users" ? 'active-nav' : ''}
                                 >
                                     Profile
                                 </Nav.Link>
@@ -85,21 +82,18 @@ export const NavigationBar = ({ user, onLoggedOut, onSearch }) => {
                             </>
                         )}
                     </Nav>
-                    {/* {user && (
+                    {user && location.pathname === "/" && (
                         <Form className="d-flex">
                             <Form.Control
                                 style={{ color: 'white' }}
-                                type="search"
+                                type="text"
                                 placeholder="Search"
                                 className="md-2"
                                 aria-label="Search"
-                                value={query}
-                                onChange={(e) => {
-                                    setQuery(e.target.value);
-                                }}
+                                onChange={onSearch}
                             />
                         </Form>
-                    )} */}
+                    )}
                 </Navbar.Collapse>
             </Container>
         </Navbar>

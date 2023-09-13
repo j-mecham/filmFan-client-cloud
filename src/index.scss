@@ -17,3 +17,25 @@ button {
     margin-top: 20px;
     padding: 20px;
 }
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.active-nav {
+    background-color: $body-bg;
+    border-radius: 8px;
+}

@@ -15,7 +15,7 @@ export const MainView = () => {
     const [user, setUser] = useState(storedUser ? storedUser : null);
     const [token, setToken] = useState(storedToken ? storedToken : null);
     const [movies, setMovies] = useState([]);
-    const [viewMovies, setViewMovies] = useState(movies);
+    const [searchedMovies, setSearchedMovies] = useState([]);
 
     useEffect(() => {
         if (!token) {
@@ -46,8 +46,16 @@ export const MainView = () => {
     }, [token]);
 
     useEffect(() => {
-        setViewMovies(movies);
+        setSearchedMovies(movies);
     }, [movies]);
+
+    const onSearch = (query) => {
+        const searchedFor = query.target.value.toLowerCase();
+        const newArray = movies.filter((movie) =>
+            movie.title.toLowerCase().includes(searchedFor)
+        );
+        setSearchedMovies(newArray)
+    }
 
     return (
         <BrowserRouter>
@@ -58,14 +66,7 @@ export const MainView = () => {
                     setToken(null);
                     localStorage.clear("user", "token");
                 }}
-                onSearch={(query) => {
-                    setViewMovies(
-                        movies.filter((movie) =>
-                            movie.title.toLowerCase().includes(query.toLowerCase())
-                        )
-                    );
-                }}
-
+                onSearch={onSearch}
             />
             <Row className="justify-content-md-center">
                 <Routes>
@@ -121,7 +122,6 @@ export const MainView = () => {
                                             token={token}
                                             setUser={setUser}
                                             movies={movies}
-                                        //updatedUser={updatedUser}
                                         />
                                     </Col>
                                 ) : (
@@ -161,7 +161,7 @@ export const MainView = () => {
                                     <Col>The list is empty!</Col>
                                 ) : (
                                     <>
-                                        {movies.map((movie) => (
+                                        {searchedMovies.map((movie) => (
                                             <Col className="mb-4" key={movie.id} md={3}>
                                                 <MovieCard movie={movie} />
                                             </Col>
