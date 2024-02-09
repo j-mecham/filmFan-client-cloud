@@ -21,7 +21,7 @@ export const MovieView = ({ movies, user, setUser, token }) => {
 
     const handleToggleFavorite = () => {
         fetch(
-            `https://filmfanattic-8d1d52c1e608.herokuapp.com/users/${user.Username}/movies/${movie.id}`,
+            process.env.REACT_APP_APIURL+"/users/${user.Username}/movies/${movie.id}",
             {
                 method: isFavorite ? 'DELETE' : 'POST',
                 headers: { Authorization: `Bearer ${token}` },

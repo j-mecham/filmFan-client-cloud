@@ -15,7 +15,7 @@ export const LoginView = ({ onLoggedIn }) => {
             Password: password
         };
 
-        fetch("https://filmfanattic-8d1d52c1e608.herokuapp.com/login", {
+        fetch(process.env.REACT_APP_APIURL+"/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

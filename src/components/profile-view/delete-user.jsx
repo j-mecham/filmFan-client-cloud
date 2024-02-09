@@ -7,7 +7,7 @@ export function DeleteUser({ profile, setUser, token }) {
 
     const handleDelete = () => {
         fetch(
-            `https://filmfanattic-8d1d52c1e608.herokuapp.com/users/${profile.Username}`,
+            process.env.REACT_APP_APIURL+"/users/${profile.Username}",
             {
                 method: 'DELETE',
                 headers: {
