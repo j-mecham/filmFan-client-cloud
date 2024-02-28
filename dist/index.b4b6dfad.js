@@ -42726,10 +42726,17 @@ function AddPoster({ profile, token }) {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Col), {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: "Upload a Poster to your wall!"
+                    children: "Upload a Poster to your wall! "
                 }, void 0, false, {
                     fileName: "src/components/profile-view/add-poster.jsx",
                     lineNumber: 46,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "(jpg or png only)"
+                }, void 0, false, {
+                    fileName: "src/components/profile-view/add-poster.jsx",
+                    lineNumber: 47,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -42740,7 +42747,7 @@ function AddPoster({ profile, token }) {
                             onChange: handleFileChange
                         }, void 0, false, {
                             fileName: "src/components/profile-view/add-poster.jsx",
-                            lineNumber: 51,
+                            lineNumber: 52,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
@@ -42748,13 +42755,13 @@ function AddPoster({ profile, token }) {
                             children: "Upload File"
                         }, void 0, false, {
                             fileName: "src/components/profile-view/add-poster.jsx",
-                            lineNumber: 54,
+                            lineNumber: 55,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/profile-view/add-poster.jsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 17
                 }, this)
             ]

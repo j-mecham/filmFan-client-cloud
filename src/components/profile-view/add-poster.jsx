@@ -43,7 +43,8 @@ export function AddPoster({ profile, token }) {
     return (
         <Row className="justify-content-md-center">
             <Col>
-                <h4>Upload a Poster to your wall!</h4>
+                <h4>Upload a Poster to your wall! </h4>
+                <p>(jpg or png only)</p>
                 <form onSubmit={handleUpload}>
                     {/* <label>
                     Choose Image:
