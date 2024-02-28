@@ -27209,7 +27209,7 @@ const MainView = ()=>{
             console.log("no token");
             return;
         }
-        fetch("http://100.26.203.88/movies", {
+        fetch("http://localhost:8080/movies", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -28653,7 +28653,7 @@ var _toggleButtonGroupDefault = parcelHelpers.interopDefault(_toggleButtonGroup)
 var _tooltip = require("./Tooltip");
 var _tooltipDefault = parcelHelpers.interopDefault(_tooltip);
 
-},{"./Accordion":false,"./AccordionContext":false,"./AccordionCollapse":false,"./AccordionButton":false,"./AccordionBody":false,"./AccordionHeader":false,"./AccordionItem":false,"./Alert":false,"./AlertHeading":false,"./AlertLink":false,"./Anchor":false,"./Badge":false,"./Breadcrumb":false,"./BreadcrumbItem":false,"./Button":"aPzUt","./ButtonGroup":false,"./ButtonToolbar":false,"./Card":"lAynp","./CardBody":false,"./CardFooter":false,"./CardGroup":false,"./CardHeader":false,"./CardImg":false,"./CardImgOverlay":false,"./CardLink":false,"./CardSubtitle":false,"./CardText":false,"./CardTitle":false,"./Carousel":false,"./CarouselCaption":false,"./CarouselItem":false,"./CloseButton":false,"./Col":false,"./Collapse":false,"./Container":"hEdsw","./Dropdown":false,"./DropdownButton":false,"./DropdownDivider":false,"./DropdownHeader":false,"./DropdownItem":false,"./DropdownItemText":false,"./DropdownMenu":false,"./DropdownToggle":false,"./Fade":false,"./Figure":false,"./FigureCaption":false,"./FigureImage":false,"./Form":false,"./FormControl":false,"./FormCheck":false,"./FormFloating":false,"./FloatingLabel":false,"./FormGroup":false,"./FormLabel":false,"./FormText":false,"./FormSelect":false,"./Image":false,"./InputGroup":false,"./ListGroup":false,"./ListGroupItem":false,"./Modal":false,"./ModalBody":false,"./ModalDialog":false,"./ModalFooter":false,"./ModalHeader":false,"./ModalTitle":false,"./Nav":"cXyL2","./Navbar":"1mHjo","./NavbarBrand":false,"./NavbarCollapse":false,"./NavbarOffcanvas":false,"./NavbarText":false,"./NavbarToggle":false,"./NavDropdown":false,"./NavItem":false,"./NavLink":false,"./Offcanvas":false,"./OffcanvasBody":false,"./OffcanvasHeader":false,"./OffcanvasTitle":false,"./OffcanvasToggling":false,"./Overlay":false,"./OverlayTrigger":false,"./PageItem":false,"./Pagination":false,"./Placeholder":false,"./PlaceholderButton":false,"./Popover":false,"./PopoverBody":false,"./PopoverHeader":false,"./ProgressBar":false,"./Ratio":false,"./Row":false,"./Spinner":false,"./SplitButton":false,"./SSRProvider":false,"./Stack":false,"./Tab":false,"./TabContainer":false,"./TabContent":false,"./Table":false,"./TabPane":false,"./Tabs":false,"./ThemeProvider":false,"./Toast":false,"./ToastBody":false,"./ToastContainer":false,"./ToastHeader":false,"./ToggleButton":false,"./ToggleButtonGroup":false,"./Tooltip":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aPzUt":[function(require,module,exports) {
+},{"./Accordion":false,"./AccordionContext":false,"./AccordionCollapse":false,"./AccordionButton":false,"./AccordionBody":false,"./AccordionHeader":false,"./AccordionItem":false,"./Alert":false,"./AlertHeading":false,"./AlertLink":false,"./Anchor":false,"./Badge":false,"./Breadcrumb":false,"./BreadcrumbItem":false,"./Button":"aPzUt","./ButtonGroup":false,"./ButtonToolbar":false,"./Card":"lAynp","./CardBody":false,"./CardFooter":false,"./CardGroup":false,"./CardHeader":false,"./CardImg":false,"./CardImgOverlay":false,"./CardLink":false,"./CardSubtitle":false,"./CardText":false,"./CardTitle":false,"./Carousel":false,"./CarouselCaption":false,"./CarouselItem":false,"./CloseButton":false,"./Col":"2L2I6","./Collapse":false,"./Container":"hEdsw","./Dropdown":false,"./DropdownButton":false,"./DropdownDivider":false,"./DropdownHeader":false,"./DropdownItem":false,"./DropdownItemText":false,"./DropdownMenu":false,"./DropdownToggle":false,"./Fade":false,"./Figure":false,"./FigureCaption":false,"./FigureImage":false,"./Form":false,"./FormControl":false,"./FormCheck":false,"./FormFloating":false,"./FloatingLabel":false,"./FormGroup":false,"./FormLabel":false,"./FormText":false,"./FormSelect":false,"./Image":false,"./InputGroup":false,"./ListGroup":false,"./ListGroupItem":false,"./Modal":false,"./ModalBody":false,"./ModalDialog":false,"./ModalFooter":false,"./ModalHeader":false,"./ModalTitle":false,"./Nav":"cXyL2","./Navbar":"1mHjo","./NavbarBrand":false,"./NavbarCollapse":false,"./NavbarOffcanvas":false,"./NavbarText":false,"./NavbarToggle":false,"./NavDropdown":false,"./NavItem":false,"./NavLink":false,"./Offcanvas":false,"./OffcanvasBody":false,"./OffcanvasHeader":false,"./OffcanvasTitle":false,"./OffcanvasToggling":false,"./Overlay":false,"./OverlayTrigger":false,"./PageItem":false,"./Pagination":false,"./Placeholder":false,"./PlaceholderButton":false,"./Popover":false,"./PopoverBody":false,"./PopoverHeader":false,"./ProgressBar":false,"./Ratio":false,"./Row":"cMC39","./Spinner":false,"./SplitButton":false,"./SSRProvider":false,"./Stack":false,"./Tab":false,"./TabContainer":false,"./TabContent":false,"./Table":false,"./TabPane":false,"./Tabs":false,"./ThemeProvider":false,"./Toast":false,"./ToastBody":false,"./ToastContainer":false,"./ToastHeader":false,"./ToggleButton":false,"./ToggleButtonGroup":false,"./Tooltip":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aPzUt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _classnames = require("classnames");
@@ -34595,7 +34595,7 @@ exports.default = Row;
 
 },{"classnames":"jocGM","react":"21dqq","./ThemeProvider":"dVixI","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9xmpe":[function(require,module,exports) {
 /**
- * React Router DOM v6.21.3
+ * React Router DOM v6.22.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -34894,6 +34894,21 @@ const _excluded = [
     "preventScrollReset",
     "unstable_viewTransition"
 ];
+// HEY YOU! DON'T TOUCH THIS VARIABLE!
+//
+// It is replaced with the proper version at build time via a babel plugin in
+// the rollup config.
+//
+// Export a global property onto the window for React Router detection by the
+// Core Web Vitals Technology Report.  This way they can configure the `wappalyzer`
+// to detect and properly classify live websites as being built with React Router:
+// https://github.com/HTTPArchive/wappalyzer/blob/main/src/technologies/r.json
+const REACT_ROUTER_VERSION = "6";
+try {
+    window.__reactRouterVersion = REACT_ROUTER_VERSION;
+} catch (e) {
+// no-op
+}
 function createBrowserRouter(routes, opts) {
     return (0, _router.createRouter)({
         basename: opts == null ? void 0 : opts.basename,
@@ -36004,7 +36019,7 @@ let savedScrollPositions = {};
 
 },{"react":"21dqq","react-dom":"j6uA9","react-router":"dbWyW","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dbWyW":[function(require,module,exports) {
 /**
- * React Router v6.21.3
+ * React Router v6.22.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -36346,7 +36361,26 @@ function useRoutesImpl(routes, locationArg, dataRouterState, future) {
         location = parsedLocationArg;
     } else location = locationFromContext;
     let pathname = location.pathname || "/";
-    let remainingPathname = parentPathnameBase === "/" ? pathname : pathname.slice(parentPathnameBase.length) || "/";
+    let remainingPathname = pathname;
+    if (parentPathnameBase !== "/") {
+        // Determine the remaining pathname by removing the # of URL segments the
+        // parentPathnameBase has, instead of removing based on character count.
+        // This is because we can't guarantee that incoming/outgoing encodings/
+        // decodings will match exactly.
+        // We decode paths before matching on a per-segment basis with
+        // decodeURIComponent(), but we re-encode pathnames via `new URL()` so they
+        // match what `window.location.pathname` would reflect.  Those don't 100%
+        // align when it comes to encoded URI characters such as % and &.
+        //
+        // So we may end up with:
+        //   pathname:           "/descendant/a%25b/match"
+        //   parentPathnameBase: "/descendant/a%b"
+        //
+        // And the direct substring removal approach won't work :/
+        let parentSegments = parentPathnameBase.replace(/^\//, "").split("/");
+        let segments = pathname.replace(/^\//, "").split("/");
+        remainingPathname = "/" + segments.slice(parentSegments.length).join("/");
+    }
     let matches = (0, _router.matchRoutes)(routes, {
         pathname: remainingPathname
     });
@@ -37251,7 +37285,7 @@ function createMemoryRouter(routes, opts) {
 
 },{"react":"21dqq","@remix-run/router":"5ncDG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ncDG":[function(require,module,exports) {
 /**
- * @remix-run/router v1.14.2
+ * @remix-run/router v1.15.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -37640,6 +37674,10 @@ function getUrlBasedHistory(getLocation, createHref, validateLocation, options) 
         // See https://bugzilla.mozilla.org/show_bug.cgi?id=878297
         let base = window1.location.origin !== "null" ? window1.location.origin : window1.location.href;
         let href = typeof to === "string" ? to : createPath(to);
+        // Treating this as a full URL will strip any trailing spaces so we need to
+        // pre-encode them since they might be part of a matching splat param from
+        // an ancestor route
+        href = href.replace(/ $/, "%20");
         invariant(base, "No window.location.(origin|href) available to create URL for href: " + href);
         return new URL(href, base);
     }
@@ -37741,13 +37779,16 @@ function convertRoutesToDataRoutes(routes, mapRouteProperties, parentPath, manif
     let branches = flattenRoutes(routes);
     rankRouteBranches(branches);
     let matches = null;
-    for(let i = 0; matches == null && i < branches.length; ++i)matches = matchRouteBranch(branches[i], // Incoming pathnames are generally encoded from either window.location
-    // or from router.navigate, but we want to match against the unencoded
-    // paths in the route definitions.  Memory router locations won't be
-    // encoded here but there also shouldn't be anything to decode so this
-    // should be a safe operation.  This avoids needing matchRoutes to be
-    // history-aware.
-    safelyDecodeURI(pathname));
+    for(let i = 0; matches == null && i < branches.length; ++i){
+        // Incoming pathnames are generally encoded from either window.location
+        // or from router.navigate, but we want to match against the unencoded
+        // paths in the route definitions.  Memory router locations won't be
+        // encoded here but there also shouldn't be anything to decode so this
+        // should be a safe operation.  This avoids needing matchRoutes to be
+        // history-aware.
+        let decoded = decodePath(pathname);
+        matches = matchRouteBranch(branches[i], decoded);
+    }
     return matches;
 }
 function convertRouteMatchToUiMatch(match, loaderData) {
@@ -37980,7 +38021,7 @@ function matchRouteBranch(branch, pathname) {
         }
         const value = captureGroups[index];
         if (isOptional && !value) memo[paramName] = undefined;
-        else memo[paramName] = safelyDecodeURIComponent(value || "", paramName);
+        else memo[paramName] = (value || "").replace(/%2F/g, "/");
         return memo;
     }, {});
     return {
@@ -38027,19 +38068,11 @@ function compilePath(path, caseSensitive, end) {
         params
     ];
 }
-function safelyDecodeURI(value) {
+function decodePath(value) {
     try {
-        return decodeURI(value);
+        return value.split("/").map((v)=>decodeURIComponent(v).replace(/\//g, "%2F")).join("/");
     } catch (error) {
         warning(false, 'The URL path "' + value + '" could not be decoded because it is is a ' + "malformed URL segment. This is probably due to a bad percent " + ("encoding (" + error + ")."));
-        return value;
-    }
-}
-function safelyDecodeURIComponent(value, paramName) {
-    try {
-        return decodeURIComponent(value);
-    } catch (error) {
-        warning(false, 'The value for the URL param "' + paramName + '" will not be decoded because' + (' the string "' + value + '" is a malformed URL segment. This is probably') + (" due to a bad percent encoding (" + error + ")."));
         return value;
     }
 }
@@ -39799,7 +39832,8 @@ function createStaticHandler(routes, opts) {
     } else mapRouteProperties = defaultMapRouteProperties;
     // Config driven behavior flags
     let future = _extends({
-        v7_relativeSplatPath: false
+        v7_relativeSplatPath: false,
+        v7_throwAbortReason: false
     }, opts ? opts.future : null);
     let dataRoutes = convertRoutesToDataRoutes(routes, mapRouteProperties, undefined, manifest);
     /**
@@ -39980,10 +40014,7 @@ function createStaticHandler(routes, opts) {
                 isRouteRequest,
                 requestContext
             });
-            if (request.signal.aborted) {
-                let method = isRouteRequest ? "queryRoute" : "query";
-                throw new Error(method + "() call aborted: " + request.method + " " + request.url);
-            }
+            if (request.signal.aborted) throwStaticHandlerAbortedError(request, isRouteRequest, future);
         }
         if (isRedirectResult(result)) // Uhhhh - this should never happen, we should always throw these from
         // callLoaderOrAction, but the type narrowing here keeps TS happy and we
@@ -40091,10 +40122,7 @@ function createStaticHandler(routes, opts) {
                     requestContext
                 }))
         ]);
-        if (request.signal.aborted) {
-            let method = isRouteRequest ? "queryRoute" : "query";
-            throw new Error(method + "() call aborted: " + request.method + " " + request.url);
-        }
+        if (request.signal.aborted) throwStaticHandlerAbortedError(request, isRouteRequest, future);
         // Process and commit output from loaders
         let activeDeferreds = new Map();
         let context = processRouteLoaderData(matches, matchesToLoad, results, pendingActionError, activeDeferreds);
@@ -40123,12 +40151,17 @@ function createStaticHandler(routes, opts) {
  * provide an updated StaticHandlerContext suitable for a second SSR render
  */ function getStaticContextFromError(routes, context, error) {
     let newContext = _extends({}, context, {
-        statusCode: 500,
+        statusCode: isRouteErrorResponse(error) ? error.status : 500,
         errors: {
             [context._deepestRenderedBoundaryId || routes[0].id]: error
         }
     });
     return newContext;
+}
+function throwStaticHandlerAbortedError(request, isRouteRequest, future) {
+    if (future.v7_throwAbortReason && request.signal.reason !== undefined) throw request.signal.reason;
+    let method = isRouteRequest ? "queryRoute" : "query";
+    throw new Error(method + "() call aborted: " + request.method + " " + request.url);
 }
 function isSubmissionNavigation(opts) {
     return opts != null && ("formData" in opts && opts.formData != null || "body" in opts && opts.body !== undefined);
@@ -41242,7 +41275,7 @@ const MovieView = ({ movies, user, setUser, token })=>{
         movie
     ]);
     const handleToggleFavorite = ()=>{
-        fetch("http://100.26.203.88/users/${user.Username}/movies/${movie.id}", {
+        fetch("http://localhost:8080/users/${user.Username}/movies/${movie.id}", {
             method: isFavorite ? "DELETE" : "POST",
             headers: {
                 Authorization: `Bearer ${token}`
@@ -41524,7 +41557,7 @@ const LoginView = ({ onLoggedIn })=>{
             Username: username,
             Password: password
         };
-        fetch("http://100.26.203.88/login", {
+        fetch("http://localhost:8080/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -41660,7 +41693,7 @@ const SignupView = ({ onLoggedIn })=>{
             Email: email,
             Birthday: birthday
         };
-        fetch("http://100.26.203.88/users", {
+        fetch("http://localhost:8080/users", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
@@ -41673,7 +41706,7 @@ const SignupView = ({ onLoggedIn })=>{
                     Username: username,
                     Password: password
                 };
-                fetch("http://100.26.203.88/login", {
+                fetch("http://localhost:8080/login", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -41851,8 +41884,8 @@ var _userInfo = require("./user-info");
 var _updateUser = require("./update-user");
 var _deleteUser = require("./delete-user");
 var _favoriteMovies = require("./favorite-movies");
-var _container = require("react-bootstrap/Container");
-var _containerDefault = parcelHelpers.interopDefault(_container);
+var _posters = require("./posters");
+var _addPoster = require("./add-poster");
 var _row = require("react-bootstrap/Row");
 var _rowDefault = parcelHelpers.interopDefault(_row);
 var _col = require("react-bootstrap/Col");
@@ -41866,7 +41899,7 @@ function ProfileView({ token, user, setUser, movies }) {
     const [error, setError] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
         console.log("working");
-        fetch("http://100.26.203.88/users", {
+        fetch("http://localhost:8080/users", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -41891,7 +41924,7 @@ function ProfileView({ token, user, setUser, movies }) {
         children: error
     }, void 0, false, {
         fileName: "src/components/profile-view/profile-view.jsx",
-        lineNumber: 40,
+        lineNumber: 41,
         columnNumber: 16
     }, this);
     return profile ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -41903,17 +41936,17 @@ function ProfileView({ token, user, setUser, movies }) {
                         children: "Your Profile"
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 47,
+                        lineNumber: 48,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "src/components/profile-view/profile-view.jsx",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/profile-view/profile-view.jsx",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
@@ -41936,14 +41969,14 @@ function ProfileView({ token, user, setUser, movies }) {
                                         children: " Your Information"
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
-                                        lineNumber: 56,
+                                        lineNumber: 57,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userInfo.UserInfo), {
                                         profile: profile
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
-                                        lineNumber: 57,
+                                        lineNumber: 58,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41954,28 +41987,28 @@ function ProfileView({ token, user, setUser, movies }) {
                                             token: token
                                         }, void 0, false, {
                                             fileName: "src/components/profile-view/profile-view.jsx",
-                                            lineNumber: 59,
+                                            lineNumber: 60,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
-                                        lineNumber: 58,
+                                        lineNumber: 59,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/profile-view/profile-view.jsx",
-                                lineNumber: 55,
+                                lineNumber: 56,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "src/components/profile-view/profile-view.jsx",
-                            lineNumber: 52,
+                            lineNumber: 53,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 51,
+                        lineNumber: 52,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
@@ -41996,7 +42029,7 @@ function ProfileView({ token, user, setUser, movies }) {
                                         children: "Update Your Information"
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 68,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _updateUser.UpdateUser), {
@@ -42005,29 +42038,29 @@ function ProfileView({ token, user, setUser, movies }) {
                                         token: token
                                     }, void 0, false, {
                                         fileName: "src/components/profile-view/profile-view.jsx",
-                                        lineNumber: 68,
+                                        lineNumber: 69,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/profile-view/profile-view.jsx",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "src/components/profile-view/profile-view.jsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/profile-view/profile-view.jsx",
-                lineNumber: 50,
+                lineNumber: 51,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
@@ -42038,12 +42071,12 @@ function ProfileView({ token, user, setUser, movies }) {
                             children: "Your Favorite Movies:"
                         }, void 0, false, {
                             fileName: "src/components/profile-view/profile-view.jsx",
-                            lineNumber: 75,
+                            lineNumber: 76,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 74,
+                        lineNumber: 75,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
@@ -42055,18 +42088,67 @@ function ProfileView({ token, user, setUser, movies }) {
                             token: token
                         }, void 0, false, {
                             fileName: "src/components/profile-view/profile-view.jsx",
-                            lineNumber: 78,
+                            lineNumber: 79,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 77,
+                        lineNumber: 78,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/profile-view/profile-view.jsx",
-                lineNumber: 73,
+                lineNumber: 74,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _addPoster.AddPoster), {
+                    profile: profile,
+                    token: token
+                }, void 0, false, {
+                    fileName: "src/components/profile-view/profile-view.jsx",
+                    lineNumber: 89,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "src/components/profile-view/profile-view.jsx",
+                lineNumber: 88,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
+                        className: "mt-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            children: "Your Posters:"
+                        }, void 0, false, {
+                            fileName: "src/components/profile-view/profile-view.jsx",
+                            lineNumber: 93,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/profile-view/profile-view.jsx",
+                        lineNumber: 92,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _posters.Posters), {
+                            profile: profile
+                        }, void 0, false, {
+                            fileName: "src/components/profile-view/profile-view.jsx",
+                            lineNumber: 96,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/profile-view/profile-view.jsx",
+                        lineNumber: 95,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/profile-view/profile-view.jsx",
+                lineNumber: 91,
                 columnNumber: 13
             }, this)
         ]
@@ -42074,7 +42156,7 @@ function ProfileView({ token, user, setUser, movies }) {
         children: "Loading..."
     }, void 0, false, {
         fileName: "src/components/profile-view/profile-view.jsx",
-        lineNumber: 89,
+        lineNumber: 103,
         columnNumber: 9
     }, this);
 }
@@ -42088,7 +42170,7 @@ $RefreshReg$(_c, "ProfileView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./user-info":"66eot","./update-user":"2SBwg","./delete-user":"fKFLs","./favorite-movies":"dTTQH","react-bootstrap/Container":"hEdsw","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","react-bootstrap/Card":"lAynp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66eot":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./user-info":"66eot","./update-user":"2SBwg","./delete-user":"fKFLs","./favorite-movies":"dTTQH","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","react-bootstrap/Card":"lAynp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./posters":"4pEK4","./add-poster":"1tmS8"}],"66eot":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1330 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42185,7 +42267,7 @@ function UpdateUser({ profile, setUser, token }) {
     const [error, setError] = (0, _react.useState)(null);
     const handleUpdate = (e)=>{
         e.preventDefault();
-        fetch("http://100.26.203.88/users/${profile.Username}", {
+        fetch("http://localhost:8080/users/${profile.Username}", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -42392,7 +42474,7 @@ function DeleteUser({ profile, setUser, token }) {
     _s();
     const navigate = (0, _reactRouterDom.useNavigate)();
     const handleDelete = ()=>{
-        fetch("http://100.26.203.88/users/${profile.Username}", {
+        fetch("http://localhost:8080/users/${profile.Username}", {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`
@@ -42521,7 +42603,183 @@ $RefreshReg$(_c, "FavoriteMovies");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../movie-card/movie-card":"bwuIu","react-bootstrap/Col":"2L2I6","react-bootstrap/Row":"cMC39","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bsPVM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../movie-card/movie-card":"bwuIu","react-bootstrap/Col":"2L2I6","react-bootstrap/Row":"cMC39","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4pEK4":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$14dc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$14dc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Posters", ()=>Posters);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _col = require("react-bootstrap/Col");
+var _colDefault = parcelHelpers.interopDefault(_col);
+var _row = require("react-bootstrap/Row");
+var _rowDefault = parcelHelpers.interopDefault(_row);
+var _reactBootstrap = require("react-bootstrap");
+var _reactRouterDom = require("react-router-dom");
+function Posters({ profile, movies, user, setUser, token }) {
+    const posters = profile.Posters;
+    console.log("posters ", posters);
+    var imgUrls = [];
+    for(let i = 0; i < posters.length; i++)imgUrls.push("https://s3.amazonaws.com/resized-image-bucket-jm/" + posters[i]);
+    console.log("urls: ", imgUrls);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
+        children: imgUrls.map((poster, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
+                md: 3,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
+                    // className="h-100"
+                    style: {
+                        borderRadius: 0
+                    },
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "https://s3.amazonaws.com/exercise-2-4-bucket/" + posters[index],
+                        target: "_blank",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Img, {
+                            variant: "top",
+                            src: poster
+                        }, void 0, false, {
+                            fileName: "src/components/profile-view/posters.jsx",
+                            lineNumber: 31,
+                            columnNumber: 29
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/profile-view/posters.jsx",
+                        lineNumber: 27,
+                        columnNumber: 25
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/profile-view/posters.jsx",
+                    lineNumber: 22,
+                    columnNumber: 21
+                }, this)
+            }, index, false, {
+                fileName: "src/components/profile-view/posters.jsx",
+                lineNumber: 21,
+                columnNumber: 17
+            }, this))
+    }, void 0, false, {
+        fileName: "src/components/profile-view/posters.jsx",
+        lineNumber: 19,
+        columnNumber: 9
+    }, this);
+}
+_c = Posters;
+var _c;
+$RefreshReg$(_c, "Posters");
+
+  $parcel$ReactRefreshHelpers$14dc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap/Col":"2L2I6","react-bootstrap/Row":"cMC39","react-bootstrap":"3AD9A","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1tmS8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2527 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2527.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AddPoster", ()=>AddPoster);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactBootstrap = require("react-bootstrap");
+var _react = require("react");
+var _s = $RefreshSig$();
+function AddPoster({ profile, token }) {
+    _s();
+    const [file, setFile] = (0, _react.useState)(null);
+    username = profile.Username;
+    console.log("username:", username);
+    const handleFileChange = async (e)=>{
+        setFile(e.target.files[0]);
+    };
+    const handleUpload = async (e)=>{
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("file", file);
+        try {
+            const response = await fetch("http://localhost:8080/users/" + username + "/upload", {
+                method: "POST",
+                headers: {
+                    Authorization: `Bearer ${token}`
+                },
+                body: formData
+            });
+            if (response.ok) {
+                const data = await response.json();
+                setTimeout(window.location.reload(), 2000);
+                console.log("Upload Successful:", data.message);
+                alert("Upload Successful");
+            } else console.error("Error Uploading file:", error.message);
+        } catch (error1) {
+            console.error("Error uploading file: ", error1.message);
+        }
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Row), {
+        className: "justify-content-md-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Col), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: "Upload a Poster to your wall!"
+                }, void 0, false, {
+                    fileName: "src/components/profile-view/add-poster.jsx",
+                    lineNumber: 46,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    onSubmit: handleUpload,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "file",
+                            onChange: handleFileChange
+                        }, void 0, false, {
+                            fileName: "src/components/profile-view/add-poster.jsx",
+                            lineNumber: 51,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
+                            type: "submit",
+                            children: "Upload File"
+                        }, void 0, false, {
+                            fileName: "src/components/profile-view/add-poster.jsx",
+                            lineNumber: 54,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/profile-view/add-poster.jsx",
+                    lineNumber: 47,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/profile-view/add-poster.jsx",
+            lineNumber: 45,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/profile-view/add-poster.jsx",
+        lineNumber: 44,
+        columnNumber: 9
+    }, this);
+}
+_s(AddPoster, "Nkb8eHkBruGouXteoqeZ1R6wRVk=");
+_c = AddPoster;
+var _c;
+$RefreshReg$(_c, "AddPoster");
+
+  $parcel$ReactRefreshHelpers$2527.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-bootstrap":"3AD9A","react":"21dqq"}],"bsPVM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$abf5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

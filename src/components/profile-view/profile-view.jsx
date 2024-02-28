@@ -3,7 +3,8 @@ import { UserInfo } from './user-info';
 import { UpdateUser } from './update-user';
 import { DeleteUser } from './delete-user';
 import { FavoriteMovies } from './favorite-movies';
-import Container from 'react-bootstrap/Container';
+import { Posters } from './posters';
+import { AddPoster } from './add-poster';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -81,6 +82,19 @@ export function ProfileView({ token, user, setUser, movies }) {
                         user={user}
                         setUser={setUser}
                         token={token}
+                    />
+                </Row>
+            </Row>
+            <Row>
+                <AddPoster profile={profile} token={token} />
+            </Row>
+            <Row>
+                <Col className="mt-2">
+                    <h2>Your Posters:</h2>
+                </Col>
+                <Row>
+                    <Posters
+                        profile={profile}
                     />
                 </Row>
             </Row>
